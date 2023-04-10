@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S01</title>
+    <title>Transactions App</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <div class="container dflex jcc aic fdc">
@@ -34,7 +35,7 @@
                 </div>
             </div>
             <hr>
-            <div class="transactions dflex fdc">
+            <div class="transactions fdc">
                 <div class="title" style="flex: 3;">
                     <span>Transactions (<code>...</code>)</span>
                     <span id="btnDetail" class="btn-detail">+</span>
@@ -73,16 +74,56 @@
                         <option value="r">Retrait</option>
                     </select>
                 </div>
+                <div class="form-group">
+                    <label for="mnt">Telephone</label>
+                    <input type="text" id="tel" placeholder="Telephone..." class="from-control">
+                </div>
                 <button type="button">Enregistrer</button>
             </div>
+            <div class="addUsers searchUser dflex jcc">
+                <input type="text" id="searchUser" placeholder="SEARCH USER..." class="search dflex jcc">
+            </div>
+            <div class="addUsers dflex jcc">
+                <span id="btnDetail" class="btn-detail add">+</span>
+            </div>
+
         </div>
         <div class="navigation">
             <button type="button" class="next"> suivant </button>
         </div>
     </div>
+    <div class="modal dflex fdc">
+        <div class="modal-title dflex jcc aic">
+            <div class="tilte">Veuilez donner les informations de l'utilisateur SVP</div>
+        </div>
+        <div class="body-modal dflex jcc aic fdc">
+            <div class="user dflex jcsb">
+                <label for="">Nom</label>
+                <input type="text" class="contain nom">
+            </div>
+            <div class="user dflex jcsb">
+                <label for="">Prenom</label>
+                <input type="text" class="contain prenom">
+            </div>
+            <div class="user dflex jcsb">
+                <label for="">Telephone</label>
+                <input type="text" placeholder="771234567 ..." class="contain telephone">
+            </div>
+            <div class="user dflex jcsb">
+                <label for="">Email</label>
+                <input type="text" placeholder="email@gmail.com ..." class="contain mail">
+            </div>
+            <div class="user dflex jcsb">
+                <label for="">Photo</label>
+                <input type="text" placeholder="url..." class="contain toff">
+            </div>
+        </div>
+        <div class="footer-modal dflex jcc aic">
+            <button class="ajouter">Ajouter</button>
+            <button class="annuler">Annuler</button>
+        </div>
+    </div>
 
 
-
-    <script src="script.js"></script>
 </body>
 </html>

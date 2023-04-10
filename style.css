@@ -3,6 +3,7 @@
 }
 
 body{
+    position: relative;
     padding: 0;
     margin: 0;
 }
@@ -42,8 +43,8 @@ body{
 
 /* ------------------------ */
 .card{
-    height: 50vh;
-    width: 40%;
+    height: 55vh;
+    width: 60%;
     background-color: #27566B;
     padding: 10px;
     color: #E5E8E9;
@@ -96,8 +97,8 @@ img{
     display: none;
     /* background-color: #06293D;27566B */
 }
-.active
-{
+
+.active{
     display: block;
 }
 
@@ -127,6 +128,14 @@ select{
     border-radius: 5px;
 }
 
+.select{
+    width: 100%;
+}
+
+.option{
+    font-size: 1rem;
+    text-align: center;
+}
 .form button{
     width: 100%;
     background-color: #06293D;
@@ -157,6 +166,12 @@ table{
     width: 100%;
     background-color: #799eb0;
 }
+
+.transactions{
+    height: 50%;
+    overflow: scroll;
+}
+
 tr,td{
     text-align: center;
     line-height: 30px;
@@ -164,4 +179,137 @@ tr,td{
 
 .form.hide{
     display: none;
+}
+
+.modal{
+    position: absolute;
+    width: 60%;
+    height: 50vh;
+    top: 35%;
+    left: 20%;
+    color: white;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    display: none;
+}
+
+.modal-title{
+    height: 20%;
+    background-color: #27566B;;
+}
+
+.body-modal{
+    width: 100%;
+    height: 60%;
+    background-color: rgb(145, 232, 232);
+    color: black;
+}
+
+.footer-modal{
+    height: 20%;
+    background-color: #27566B;
+}
+
+.ajouter, .annuler{
+    padding: 2%;
+    margin: 3%;
+    width: 15%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.ajouter:hover , .annuler:hover{
+    background-color: rgb(145, 232, 232);
+}
+
+.user{
+    margin: 1%;
+    width: 70%;
+}
+
+.contain{
+    outline: none;
+}
+
+.addUsers{
+    position: absolute;
+    top: -8%;
+    left: 0;
+    width: 5%;
+    height: 8%;
+    background-color: #27566B;
+}
+
+.searchUser{
+    width: 50%;
+    left: 50%;
+    border-radius: 10px 10px 0 0;
+}
+.search{
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #27566B;
+    color: white;
+}
+
+.phone, .tel{
+    position: absolute;
+    top: 0;
+    width: 20%;
+    line-height: 2;
+    cursor: pointer;
+    background-color: #27566B;
+    color: white;
+}
+
+.tel{
+    top: 48.5%;
+    right: 9.7%;
+    width: 10.5%;
+}
+
+.optionRemove{
+    position: absolute;
+    right: 1%;
+    width: 8%;
+    height: 5%;
+}
+
+.sens{
+    position: absolute;
+    width: 20%;
+    right: 10%;
+}
+
+.mess{
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 7%;
+    padding: 2%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: #27566B;
+    color: white;
+    animation: message 5s infinite;
+}
+
+@keyframes message
+{
+    0%
+    {
+        top: 0;
+    }
+    50%
+    {
+        top: 8%;
+    }
+    100%
+    {
+        top: 0;
+    }
 }
